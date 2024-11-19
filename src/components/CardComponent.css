@@ -1,0 +1,101 @@
+/* src/components/CardComponent.css */
+
+/* Card List Styling (Horizontal) */
+.card-list {
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+    padding: 20px;
+    gap: 20px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  /* Card Styling */
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    min-width: 250px;
+    margin: 10px;
+    position: relative;
+  }
+  
+  /* Image Styling */
+  .card-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Content inside Card */
+  .card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  /* Description Styling */
+  .card-description {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  /* Price Styling */
+  .card-price {
+    font-size: 1.2em;
+    color: #007bff;
+    margin: 5px 0;
+  }
+  
+  /* Button Styling */
+  .card-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover Effects */
+  .card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
+  }
+  
+  /* Hover Effects on Image */
+  .card:hover .card-image {
+    transform: scale(1.05); /* Image zoom effect */
+  }
+  
+  /* Hover Effects on Text */
+  .card:hover .card-title,
+  .card:hover .card-description {
+    color: #007bff; /* Change text color on hover */
+  }
+  
+  /* Hover Effect on Button */
+  .card-button:hover {
+    background-color: #0056b3; /* Darker blue on button hover */
+  }
+  
+  
